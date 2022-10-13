@@ -1,0 +1,15 @@
+
+
+.single-volunteer-card {
+     padding: 30px;
+     background: #ddd;
+     margin-bottom: 30px;
+}
+
+.classes {
+     display: flex;
+}
+
+.single-class {
+     margin: 0 4px;
+}
