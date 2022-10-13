@@ -1,0 +1,14 @@
+{
+    "name": "acf/clb_custom_info_card",
+    "title": "Info Card",
+    "description": "A custom info card block.",
+    "style": [ "file:./clb_custom_info_card.css" ],
+    "category": "common",
+    "icon": "admin-comments",
+    "keywords": ["testimonial", "quote"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "clb_custom_info_card.php"
+    },
+    "align": "full"
+}
