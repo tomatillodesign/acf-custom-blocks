@@ -27,4 +27,30 @@ function clb_custom_acf_blocks_register_acf_blocks() {
 }
 
 
+// add_filter('acf/pre_save_block', 'clb_add_permanent_id_markup_to_blocks');
+// function clb_add_permanent_id_markup_to_blocks( $attributes ) {
 
+// 	error_log('attributes');
+// 	error_log( print_r( $attributes, true ) );
+
+//     if( !isset($attributes['data']['clb-custom-id']) ) {
+//         $attributes['data']['clb-custom-id'] = 'CLB-TEST-block-' . uniqid();
+//     }
+//     return $attributes;
+// }
+
+
+add_filter(
+    'acf/pre_save_block',
+    function( $attributes ) {
+
+        //error_log('attributes');
+        error_log( print_r( $attributes, true ) );
+
+        if ( empty( $attributes['data']['clb-custom-anchor'] ) ) {
+            $attributes['data']['clb-custom-anchor'] = 'acf-block-' . uniqid();
+        }
+
+        return $attributes;
+    }
+);
