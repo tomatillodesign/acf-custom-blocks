@@ -10,5 +10,6 @@
         "mode": "preview",
         "renderTemplate": "clb_custom_info_card.php"
     },
-    "align": "full"
+    "align": "full",
+    "providesContext": {"acf/fields": "data"}
 }
