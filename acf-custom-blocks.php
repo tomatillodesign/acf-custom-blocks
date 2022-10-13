@@ -4,7 +4,7 @@ Plugin Name: ACF Custom Blocks 🧱
 Description: Create custom blocks and run all of your code here. Requires Advanced Custom Fields PRO.
 Author: Chris Liu-Beers, Tomatillo Design
 Author URI: http://www.tomatillodesign.com
-Version: 1.1
+Version: 2.0
 License: GPL v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
@@ -23,7 +23,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
 add_action( 'init', 'clb_custom_acf_blocks_register_acf_blocks' );
 function clb_custom_acf_blocks_register_acf_blocks() {
-    register_block_type( plugin_dir_path( __FILE__ ) . 'blocks/clb_custom_info_card' );
+    register_block_type( plugin_dir_path( __FILE__ ) . 'blocks/clb-custom-info-card' );
 }
 
 

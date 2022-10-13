@@ -1,5 +1,5 @@
 {
-    "name": "acf/clb_custom_info_card",
+    "name": "acf/clb-custom-info-card",
     "title": "Info Card",
     "description": "A custom info card block.",
     "style": [ "file:./clb_custom_info_card.css" ],
