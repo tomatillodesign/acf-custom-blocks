@@ -47,9 +47,15 @@ add_filter(
         //error_log('attributes');
         error_log( print_r( $attributes, true ) );
 
-        if ( empty( $attributes['data']['clb-custom-anchor'] ) ) {
-            $attributes['data']['clb-custom-anchor'] = 'acf-block-' . uniqid();
-        }
+        // if ( empty( $attributes['clb_custom_id'] ) ) {
+        //     $attributes['clb_custom_id'] = 'clb_custom_id-' . uniqid();
+        // }
+
+        if( !$attributes['clb_custom_id'] ) { $attributes['clb_custom_id'] = uniqid(); }
+
+        // if ( empty( $attributes['data']['clb_custom_id'] ) ) {
+        //     $attributes['data']['clb_custom_id'] = 'clb_custom_id-' . uniqid();
+        // }
 
         return $attributes;
     }
