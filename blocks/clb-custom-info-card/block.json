@@ -11,5 +11,11 @@
         "renderTemplate": "clb_custom_info_card.php"
     },
     "align": "full",
-    "providesContext": {"acf/fields": "data"}
+    "providesContext": {"acf/fields": "data"},
+    "attributes": {
+        "clb_custom_id": {
+            "type": "string",
+            "default": "1234abcd"
+         }
+      }
 }
