@@ -12,11 +12,13 @@
  */
 
 $block_to_publish = null;
-print_r($block['data']);
+// print_r($block);
+// print_r($block['attributes']);
+// print_r($block['data']);
 
-$custom_id = $block['data']['clb-custom-anchor'];
+$custom_id = $block['clb_custom_id'];
 if( $custom_id ) {
-    $id = ' id="' . $custom_id . '"';
+    $id = ' id="clb-custom-info-card-' . $custom_id . '"';
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
