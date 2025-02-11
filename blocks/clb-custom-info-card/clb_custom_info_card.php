@@ -1,6 +1,6 @@
 <?php
 /**
- * Testimonial Block Template.
+ * Custom Info Card Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -15,11 +15,6 @@ $block_to_publish = null;
 // print_r($block);
 // print_r($block['attributes']);
 // print_r($block['data']);
-
-$custom_id = $block['clb_custom_id'];
-if( $custom_id ) {
-    $id = ' id="clb-custom-info-card-' . $custom_id . '"';
-}
 
 // Create class attribute allowing for custom "className" and "align" values.
 $class_name = 'clb-custom-info-card';
@@ -40,5 +35,5 @@ if( $heading ) { $heading = '<div class="clb-heading-wrapper"><h3>' . $heading .
 $description = get_field( 'description' );
 if( $description ) { $description = '<div class="clb-description-wrapper">' . $description . '</div>'; }
 
-$block_to_publish = '<div class="' . $class_name . '" ' . $id . '>' . $icon . $heading . $description . '</div>';
+$block_to_publish = '<div class="' . $class_name . '">' . $icon . $heading . $description . '</div>';
 echo $block_to_publish;
