@@ -13,9 +13,6 @@
     "align": "full",
     "providesContext": {"acf/fields": "data"},
     "attributes": {
-        "clb_custom_id": {
-            "type": "string",
-            "default": "1234abcd"
-         }
+    
       }
 }
